@@ -33,8 +33,7 @@ const Recipe = () => {
            
            {activeTab === "instructions" && (
            <div>
-            <h5>{details.summary}</h5>
-            <h5>{details.instructions}</h5>
+            <h5 dangerouslySetInnerHTML={{ __html : details.summary}}></h5>
             </div> 
             )}
             {activeTab === "ingredients" &&(
